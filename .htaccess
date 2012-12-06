@@ -1,7 +1,7 @@
 RewriteEngine On
 RewriteBase /
 
-RewriteCond %{HTTP_HOST} ^.postmodernsales\.com$ [NC]
+RewriteCond %{HTTP_HOST} ^www.postmodernsales\.com$ [NC]
 #if not root
 RewriteCond %{REQUEST_URI} !^/?$ [NC]
 #redirect
