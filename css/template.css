@@ -52,6 +52,9 @@ a:hover { color:#FFF; }
 #header div.tagContent { width:482px; height:auto; position:absolute; padding:40px; bottom:54px; left:0; }
 #header div.tagContent h2 { font-size:100px; color:#FFF; line-height:100px; }
 #header div.tagContent span { font-family:Arial, Helvetica, sans-serif; font-size:24px; color:#666666; line-height:28px; }
+#header h2 {
+    text-transform: uppercase;
+}
 /*fff*/
 ul.listRight { margin:0; padding:0; }
 ul.listRight li { margin:0; border-top:solid 1px #333333; padding:18px 0; }
@@ -115,7 +118,7 @@ ul.social li a img { float:left; padding-right:5px; width:20px; height:auto; }
 }
 
 @media only screen and (max-width: 479px) {
-.pad65px { padding: 20px 0;}	
+.pad65px { padding: 20px 0;}
 .gride_Full {width:100%; }
 h1 {font-size:18px;color:#FFF;line-height:18px;padding-bottom:7px;}
 .gride1 h2 {font-size:18px;line-height:18px;padding-bottom:3px;}
