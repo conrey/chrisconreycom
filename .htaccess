@@ -1,1 +1,0 @@
-RewriteRule ^(.+)$ http://postmodernsales.com/$1 [L,R=301]
