@@ -1,0 +1,134 @@
+@charset "utf-8";
+/* CSS Document */
+/*************           *******************/
+/************* css reset ***************/
+/*************           *******************/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+body { line-height: 1; }
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+table { border-collapse: collapse; border-spacing: 0; }
+.clearfix { clear:both; line-height:1px; font-size:0; height:1px; }
+.clearfixLeft { clear:left; line-height:1px; font-size:0; height:1px; }
+
+@font-face {
+    font-family: 'BebasNeueRegular';
+    src: url('fonts/bebas-neue/BebasNeue-webfont.eot');
+    src: url('fonts/bebas-neue/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/bebas-neue/BebasNeue-webfont.woff') format('woff'),
+         url('fonts/bebas-neue/BebasNeue-webfont.ttf') format('truetype'),
+         url('fonts/bebas-neue/BebasNeue-webfont.svg#BebasNeueRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/*************           *******************/
+/************* Template Style ***************/
+/*************           *******************/
+body { font-family:Arial, Helvetica, sans-serif; font-size:12px; background: url(../images/body_bg.png) repeat 0 0; }
+#headermain { width:100%; height:auto; background:#090909; max-height:481px;  box-shadow: 0 3px 5px #000000; }
+#header { width:100%; height:auto; position:relative; max-width:1200px; margin:0 auto; }
+#header img { width:100%; height:auto; }
+.gride_Full { width:960px; height:auto; margin:0 auto; position:relative; }
+.gride1 { width:201px; margin-right:30px; float:right; padding:40px; background:url(../images/gride-bg_03.png) repeat 0 0; }
+.gride2 { width:510px; margin-left:30px; float:left; padding:40px; background:url(../images/gride-bg_03.png) repeat 0 0; }
+.gride3 { width:763px; margin:0 15px; float:left; padding:40px; background:url(../images/gride-bg_03.png) repeat 0 0; }
+.pad65px { padding:65px 0; }
+/*********** heading globle style*/
+h1 { font-size:36px; color:#FFF; font-family: 'BebasNeueRegular'; line-height:36px; padding-bottom:10px; text-transform:uppercase; }
+h2 { font-size:32px; color:#FFF; font-family: 'BebasNeueRegular'; line-height:32px; padding-bottom:10px; text-transform:uppercase; }
+h3 { font-size:28px; color:#FFF; font-family: 'BebasNeueRegular'; line-height:28px; padding-bottom:10px; text-transform:uppercase; }
+h4 { font-size:24px; color:#FFF; font-family: 'BebasNeueRegular'; line-height:24px; padding-bottom:10px; text-transform:uppercase; }
+h5 { font-size:20px; color:#FFF; font-family: 'BebasNeueRegular'; line-height:20px; padding-bottom:10px; text-transform:uppercase; }
+h6 { font-size:16px; color:#FFF; font-family: 'BebasNeueRegular'; line-height:16px; padding-bottom:10px; }
+/*********** content text style globle style*/
+p { font-family: Arial, Helvetica, sans-serif; font-size:16px; line-height:20px; color:#FFF; margin:11px 0; }
+a { color:#999999; text-decoration:none; transition: color 0.2s linear 0s; }
+a:hover { color:#FFF; }
+/******* header style tag line*********/
+#header div.tagContent { width:482px; height:auto; position:absolute; padding:40px; bottom:54px; left:0; }
+#header div.tagContent h2 { font-size:100px; color:#FFF; line-height:100px; }
+#header div.tagContent span { font-family:Arial, Helvetica, sans-serif; font-size:24px; color:#666666; line-height:28px; }
+/*fff*/
+ul.listRight { margin:0; padding:0; }
+ul.listRight li { margin:0; border-top:solid 1px #333333; padding:18px 0; }
+ul.listRight li:first-child { border:0; }
+ul.listRight li.last, ul.listRight li:last-child { padding-bottom:0; }
+ul.listRight li.last p, ul.listRight li:last-child p { margin-bottom:0; }
+ul.listRight li h3 { font-family:Arial, Helvetica, sans-serif; font-weight:bold; color:#999999; font-size:16px; line-height:22px; padding-bottom:0; }
+ul.listRight li p { font-size:14px; margin:10px 0; }
+/*content bottom social style*/
+ul.social { width:100%; margin:0; padding:0; height:29px; padding-top:46px; }
+ul.social li { float:left; margin:0; padding:0; padding-left:46px; height:29px; }
+ul.social li:first-child { padding-left:0; }
+ul.social li a { display:block; font-size:16px; line-height:29px; }
+ul.social li a span { line-height:29px; display:block; float:left; height:29px; }
+ul.social li a img { float:left; padding-right:5px; }
+
+
+.ie8 .gride2 {min-height: 619px;}
+.ie7 .gride2 {min-height: 592px;}
+/*main content article manage style*/
+.gride1 h2 { font-size:36px; line-height:36px; padding-bottom:6px; }
+.gride2 p { line-height:26px;   margin: 18px 0; }
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+.pad65px {padding: 50px 0;}
+.gride_Full {width:768px;}
+#header div.tagContent {  bottom: -2px;
+    height: auto;
+    padding: 30px 0 30px 56px;
+    width: 344px;}
+.gride2 {width:412px;padding:30px; margin-left:24px;}
+.gride1 {width:165px;padding:30px; margin-right:24px;}
+h1 {font-size:28px;color:#FFF;line-height:28px;padding-bottom:7px;}
+.gride2 p {font-size: 14px;line-height: 24px; margin: 14px 0;}
+.gride1 h2 {font-size:28px;line-height:28px;padding-bottom:3px;}
+.gride1 ul.listRight li h3 {font-family:BebasNeueRegular, Arial, Helvetica, sans-serif;font-weight:bold;color:#999999;font-size:12.8px;line-height:18px;padding-bottom:0;}
+.gride1 ul.listRight li p {font-size:12px;margin:5px 0;}
+ul.social li a { display:block; font-size:14px; line-height:29px; }
+
+#header div.tagContent h2 { font-size:80px; color:#FFF; line-height:80px; }
+#header div.tagContent span { font-family:BebasNeueRegular, Arial, Helvetica, sans-serif; font-size:20px; color:#666666; line-height:26px; }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+.pad65px { padding: 30px 0;}
+.gride_Full {width:420px; }
+h1 {font-size:22px;color:#FFF;line-height:22px;padding-bottom:7px;}
+.gride1 h2 {font-size:22px;line-height:22px;padding-bottom:3px;}
+.gride2 { float:none; width:auto; margin:15px 0; padding:30px; min-height:0;}
+.gride1 { float:none; margin:15px 0; width:auto;  width:auto; padding:30px; min-height:0; }
+.gride2 p {font-size: 13px;line-height: 18px;margin: 10px 0;}
+#header div.tagContent {     bottom: 5px;
+    height: auto;
+    padding: 30px 0 30px 30px;
+    width: 180px; }
+#header div.tagContent h2 { font-size:30px; color:#FFF; line-height:40px; }
+#header div.tagContent span { font-family:BebasNeueRegular, Arial, Helvetica, sans-serif; font-size:11px; color:#666666; line-height:18px; font-weight:bold; }
+ul.social li { float:left; margin:0; padding:0; padding-left:20px; height:20px; }
+ul.social li a { display:block; font-size:14px; line-height:25px; }
+ul.social li a span { line-height:20px; display:block; float:left; height:20px; }
+ul.social li a img { float:left; padding-right:5px; width:20px; height:auto; }
+}
+
+@media only screen and (max-width: 479px) {
+.pad65px { padding: 20px 0;}	
+.gride_Full {width:100%; }
+h1 {font-size:18px;color:#FFF;line-height:18px;padding-bottom:7px;}
+.gride1 h2 {font-size:18px;line-height:18px;padding-bottom:3px;}
+.gride2 { float:none; width:auto; margin:15px 0; padding:30px; min-height:0;}
+.gride1 { float:none; margin:15px 0; width:auto;  width:auto; padding:30px; min-height:0; }
+.gride1 ul.listRight li h3 {font-family:BebasNeueRegular, Arial, Helvetica, sans-serif;font-weight:bold;color:#999999;font-size:12px;line-height:15px;padding-bottom:0; font-weight:bold;}
+.gride2 p {font-size: 12px;line-height: 18px;margin: 10px 0;}
+.gride1 ul.listRight li p {font-size:11px;margin:5px 0;}
+#header div.tagContent { width:155px; height:auto; padding:30px; bottom:-10px;  }
+#header div.tagContent h2 { font-size:25px; color:#FFF; line-height:25px; }
+#header div.tagContent span { font-family:BebasNeueRegular, Arial, Helvetica, sans-serif; font-size:10px; color:#666666; line-height:15px; font-weight:bold; }
+ul.social li { float:left; margin:0; padding:0; padding-left:20px; height:20px; }
+ul.social li a { display:block; font-size:14px; line-height:25px; }
+ul.social li a span { line-height:20px; display:block; float:left; height:20px; }
+ul.social li a img { float:left; padding-right:5px; width:20px; height:auto; }
+}
