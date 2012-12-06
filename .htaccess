@@ -1,8 +1,8 @@
 RewriteEngine On
 RewriteBase /
 
-RewriteCond %{HTTP_HOST} ^www.postmodernsales\.com$ [NC]
+RewriteCond %{HTTP_HOST} ^www\.chrisconrey\.com$ [NC]
 #if not root
 RewriteCond %{REQUEST_URI} !^/?$ [NC]
 #redirect
-RewriteRule ^(.*)$ http://chrisconrey.com/$1 [R=301,L]
+RewriteRule ^(.*)$ http://postmodernsales.com/$1 [R=301,L]
