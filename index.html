@@ -269,14 +269,23 @@
 
     .site-footer{
       text-align: center;
-      padding: 40px 20xp;
+      padding: 40px 20px;
+    }
 
     .footer-logo {
-      width: 48px;
+      display: block;
+      width: 36px;
       height: auto;
-      opacity: 1;
-      margin-bottom: 15px;
+      opacity: 0.8;
+      margin: 0 auto 15px auto;
     }
+
+    .footer-tagline {
+  margin-top: 6px;
+  color: var(--gold);
+  letter-spacing: 0.25em;
+  font-size: 0.65rem;
+}
 
     /* ── RESPONSIVE ──────────────────────────────────────── */
     @media (max-width: 640px) {
@@ -343,10 +352,13 @@
     </div>
   </section>
 
-  <footer class="site-footer">
-          <img src="images/logo-goldongray.png" alt="Chris Conrey Logo" class="footer-logo">
-    &copy; <span id="yr"></span> Chris Conrey &nbsp;·&nbsp; Post Modern Sales
-  </footer>
+<footer class="site-footer">
+  <img src="images/logo-goldongray.png"
+       alt="Chris Conrey Logo"
+       class="footer-logo">
+
+  &copy; <span id="yr"></span> Chris Conrey &nbsp;·&nbsp; Post Modern Sales
+</footer>
 
   <script>
     document.getElementById('yr').textContent = new Date().getFullYear();
