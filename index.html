@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Crimson+Pro:ital,wght@0,300;0,400;1,300;1,400&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
-
+  <link rel="icon" type="image/png" href="images/favicon.png">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -49,7 +49,7 @@
     .hero-bg {
       position: absolute;
       inset: 0;
-      background-image: url('speakerbkg.png');
+      background-image: url('images/speakerbkg.png');
       background-size: cover;
       background-position: center top;
       filter: brightness(0.35) saturate(0.6);
@@ -267,6 +267,17 @@
       color: var(--text-muted);
     }
 
+    .site-footer{
+      text-align: center;
+      padding: 40px 20xp;
+
+    .footer-logo {
+      width: 48px;
+      height: auto;
+      opacity: 1;
+      margin-bottom: 15px;
+    }
+
     /* ── RESPONSIVE ──────────────────────────────────────── */
     @media (max-width: 640px) {
       .about-grid {
@@ -301,7 +312,7 @@
       <div class="about-grid">
 
         <div class="headshot-wrap">
-          <img src="headshot.jpg" alt="Chris Conrey" />
+          <img src="images/headshot.jpg" alt="Chris Conrey" />
         </div>
 
         <div class="about-text">
@@ -332,7 +343,8 @@
     </div>
   </section>
 
-  <footer>
+  <footer class="site-footer">
+          <img src="images/logo-goldongray.png" alt="Chris Conrey Logo" class="footer-logo">
     &copy; <span id="yr"></span> Chris Conrey &nbsp;·&nbsp; Post Modern Sales
   </footer>
 
